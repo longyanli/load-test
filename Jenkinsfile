@@ -38,3 +38,5 @@ ROOT_WORKSPACE = ""
 
 gitUsers = null
 generalSlackChannel = "#splweb-jenkins"
+
+println("Jenkins build done for all tasks!");
