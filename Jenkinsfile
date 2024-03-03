@@ -21,7 +21,6 @@ import org.jenkinsci.plugins.workflow.steps.FlowInterruptedException
 import java.text.SimpleDateFormat
 import java.util.regex.Matcher
 
-
 projectName = "load-test"
 stageStatus = 'SUCCESS'
 _jiraIssues = []
@@ -34,10 +33,8 @@ GIT_ORG = "neuralfiltersplatform"
 GIT_REPO = "spl-web-client"
 IS_MAIN_BRANCH = env.BRANCH_NAME.equals('main') ? true : false
 IS_RELEASE_BRANCH = env.BRANCH_NAME.startsWith('release') ? true : false
-IS_PR = shared.Utils.isPrBranch()
 
 ROOT_WORKSPACE = ""
 
 gitUsers = null
 generalSlackChannel = "#splweb-jenkins"
-buildParams = shared.Parameters.create()
